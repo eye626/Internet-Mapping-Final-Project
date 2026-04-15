@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<div id="container">
+  <div id="sidebar">
+    <h2>500 Upper Wellington</h2>
+
+    <div id="legend">
+      <h3>Legend</h3>
+
+      <div class="legend-item">
+        <span class="legend-icon">🏗️</span>
+        <span class="legend-label">Development Applications</span>
+        <button class="toggle-btn active" data-layer="devApps">Hide</button>
+      </div>
+      <div class="legend-item inactive">
+        <span class="legend-icon">📍</span>
+        <span class="legend-label">Addresses</span>
+        <button class="toggle-btn inactive" data-layer="addresses">Show</button>
+      </div>
+      <div class="legend-item inactive">
+        <span class="legend-icon">🚲</span>
+        <span class="legend-label">Bike Parking</span>
+        <button class="toggle-btn inactive" data-layer="bikeParking">Show</button>
+      </div>
+      <div class="legend-item inactive">
+        <span class="legend-icon">🚌</span>
+        <span class="legend-label">HSR Bus Stops</span>
+        <button class="toggle-btn inactive" data-layer="busStops">Show</button>
+      </div>
+      <div class="legend-item">
+        <span class="legend-line" style="background:#3498db"></span>
+        <span class="legend-label">Bikeways</span>
+        <button class="toggle-btn active" data-layer="bikeways">Hide</button>
+      </div>
+      <div class="legend-item">
+        <span class="legend-line" style="background:#e67e22"></span>
+        <span class="legend-label">HSR Bus Routes</span>
+        <button class="toggle-btn active" data-layer="busRoutes">Hide</button>
+      </div>
+      <div class="legend-item">
+        <span class="legend-line" style="background:#2ecc71"></span>
+        <span class="legend-label">Trails</span>
+        <button class="toggle-btn active" data-layer="trails">Hide</button>
+      </div>
+      <div class="legend-item">
+        <span class="legend-box" style="background:#1abc9c"></span>
+        <span class="legend-label">Zoning By-law Boundary</span>
+        <button class="toggle-btn active" data-layer="zoning">Hide</button>
+      </div>
+      <div class="legend-item">
+        <span class="legend-box" style="background:#f39c12"></span>
+        <span class="legend-label">500 Upper Wellington</span>
+        <button class="toggle-btn active" data-layer="upperWellington">Hide</button>
+      </div>
+
+    </div>
+  </div>
+  <div id="map"></div>
+</div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
